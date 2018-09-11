@@ -1,6 +1,25 @@
 Rails.application.routes.draw do
+  get 'agent/index'
+
+  get 'team_lead/index'
+
+  get 'supervisor/index'
+  post 'supervisor/assign'
+
+  get 'home/index'
+
+  get 'login/new'
+  get 'login/logout'
+  post 'login/create'
+
+  get 'customer/index'
+  post 'customer/import'
+
+  get 'users/index'
+  get 'users/new'
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  root to: 'users#index', as: 'home'
+  #root to: 'login#new', as: 'home'
   resources :users
 
   get 'call_log' => 'call_logs#index'

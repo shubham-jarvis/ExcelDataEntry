@@ -1,12 +1,13 @@
 class CallLogsController < ApplicationController
 
   def index
-      @call_log = CallLog.all
+    @call_log = CallLog.all
   end
+
   def new
     @call_log = CallLog.new
     @call_log.call_id = params[:call_id]
-    @call_log.user_id = params[:user_id]
+    @call_log.user_id = logged_in_session_owning_user.id
     @call_log.customer_id = params[:customer_id]
   end
 

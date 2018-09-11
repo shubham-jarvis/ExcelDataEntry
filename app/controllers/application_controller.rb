@@ -18,7 +18,7 @@ class ApplicationController < ActionController::Base
 end
 
 def logged_in?
-  redirect_to users_index_path , flash: {danger: 'You must be logged in to access this page.'} if logged_in_session_owning_user.nil?
+  redirect_to login_new_path , flash: {danger: 'You must be logged in to access this page.'} if logged_in_session_owning_user.nil?
 end
 
 def logged_in_session_owning_user

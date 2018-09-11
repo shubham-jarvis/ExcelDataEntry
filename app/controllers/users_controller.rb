@@ -18,13 +18,13 @@ class UsersController < ApplicationController
   end
 
   def makecall
-    user = User.find(params[:id])
+    user = Customer.find(params[:id])
     @dataresult = HTTParty.post('https://kpi.knowlarity.com/Basic/v1/account/call/makecall/',
                                 verify: false,
                                 body: {k_number: '+912230147776',
                                        caller_id: '+912248770336',
-                                       agent_number: '+918010481221',
-                                       customer_number: '+91' + user.mobile,
+                                       agent_number: '+91' + logged_in_session_owning_user.mobile,
+                                       customer_number: '+91' + (user.Mobile_No.to_i).to_s,
                                        description: 'This is the description for the problem'}.to_json,
                                 headers: {'Content-Type': 'application/json',
                                           'authorization': 'a4fc9ffd-f32a-4225-a358-8246ab9fb8da',

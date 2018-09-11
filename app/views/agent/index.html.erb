@@ -33,7 +33,7 @@
                 <td><span><%= c.Email %></span></td>
                 <td><span><%= c.Mobile_No %></span></td>
                 <td><span><%= c.Designation %></span></td>
-                <td><%= link_to 'Call ', "#", :class => 'btn btn-info' %></td>
+                <td><a href="#" onclick="callbutton('<%= c.id %>')" class="btn btn-info">Call</a></td>
               </tr>
             <%end%>
             </tbody>

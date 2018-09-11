@@ -8,7 +8,8 @@ window.callbutton = (customernumber)->
       "Accept": "application/json"
     )
     success: (data) ->
-      alert data
+#      alert data.success.call_id
+      location.href = 'call_log/new?call_id=' + data.success.call_id + '&user_id=2&customer_id=' + customernumber
     error: (error) ->
       alert "Something went wrong"
   )

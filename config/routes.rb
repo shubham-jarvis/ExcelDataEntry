@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   resources :users
 
   get 'call' => 'users#makecall'
+  get 'call_log/new' => 'call_logs#new'
+  post '/call_logs' => 'call_logs#create'
 end

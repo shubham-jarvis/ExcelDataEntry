@@ -15,7 +15,6 @@
               <th>Call Id</th>
               <th>Customer Id</th>
               <th>Status</th>
-              <th>Remark</th>
               <th>Remarks</th>
               <th>Description</th>
               <th>Reason</th>
@@ -26,7 +25,7 @@
             <% @call_log.each do |call| %>
               <tr>
                 <td><%= call.call_id %></td>
-                <td><span><%= call.customer_id %></span></td>
+                <td><span><%= User.find(call.customer_id).name %></span></td>
                 <td><span><%= call.status %></span></td>
                 <td><span><%= call.remarks %></span></td>
                 <td><span><%= call.description %></span></td>

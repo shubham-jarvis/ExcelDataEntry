@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   root to: 'users#index', as: 'home'
   resources :users
 
+  get 'call_log' => 'call_logs#index'
+
   get 'call' => 'users#makecall'
   get 'call_log/new' => 'call_logs#new'
   post '/call_logs' => 'call_logs#create'

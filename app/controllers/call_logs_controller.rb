@@ -1,5 +1,8 @@
 class CallLogsController < ApplicationController
 
+  def index
+      @call_log = CallLog.all
+  end
   def new
     @call_log = CallLog.new
     @call_log.call_id = params[:call_id]

@@ -1,0 +1,42 @@
+<div class="row">
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="card-title">
+
+        <h4>Call logs list </h4>
+      </div>
+      <div class="card-body">
+        <div class="text-center">
+        </div>
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+            <tr>
+              <th>Call Id</th>
+              <th>Customer Id</th>
+              <th>Status</th>
+              <th>Remarks</th>
+              <th>Description</th>
+              <th>Reason</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            <% @call_log.each do |call| %>
+              <tr>
+                <td><%= call.call_id %></td>
+                <td><span><%= User.find(call.customer_id).name %></span></td>
+                <td><span><%= call.status %></span></td>
+                <td><span><%= call.remarks %></span></td>
+                <td><span><%= call.description %></span></td>
+                <td><span><%= call.reason %></span></td>
+              </tr>
+            <% end %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

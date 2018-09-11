@@ -19,6 +19,12 @@ Rails.application.routes.draw do
   get 'users/new'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  #root to: 'login#new', as: 'home'
+  root to: 'home#index', as: 'home'
   resources :users
+
+  get 'call_log' => 'call_logs#index'
+
+  get 'agent/call' => 'users#makecall'
+  get 'agent/call_log/new' => 'call_logs#new'
+  post '/call_logs' => 'call_logs#create'
 end

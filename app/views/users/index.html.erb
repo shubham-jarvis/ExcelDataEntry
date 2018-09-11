@@ -7,6 +7,7 @@
         <div class="row pull-right">
           <div class="add-user-btn">
             <%#= link_to 'Extended contacts', contacts_extended_path, :class => 'btn btn-info' %>
+            <%= link_to 'Call logs', call_log_url, :class => 'btn btn-info' %>
             <%= link_to 'Add new user', new_user_path, :class => 'btn btn-info' %>
           </div>
         </div>
@@ -23,6 +24,7 @@
               <th>Mobile</th>
               <th>Password</th>
               <th>Role</th>
+              <th></th>
             </tr>
             </thead>
             <tbody>
@@ -34,6 +36,9 @@
                 <td><span><%= user.mobile %></span></td>
                 <td><span><%= user.password %></span></td>
                 <td><span><%= Role.find(user.role_id).title %></span></td>
+                <td>
+                  <a href="#" onclick="callbutton('<%= user.id %>')" class="btn btn-info">Call</a>
+                </td>
               </tr>
             <% end %>
             </tbody>

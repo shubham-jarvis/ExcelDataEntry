@@ -21,6 +21,7 @@
               <th>Name</th>
               <th>Email</th>
               <th>Mobile</th>
+              <th>Password</th>
               <th>Role</th>
             </tr>
             </thead>
@@ -31,6 +32,7 @@
                 <td><%= user.name %></td>
                 <td><span><%= user.email %></span></td>
                 <td><span><%= user.mobile %></span></td>
+                <td><span><%= user.password %></span></td>
                 <td><span><%= Role.find(user.role_id).title %></span></td>
               </tr>
             <% end %>

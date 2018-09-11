@@ -1,0 +1,32 @@
+<head>
+  <%= csrf_meta_tags %>
+</head>
+<div class="row">
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="card-title">
+        <h4>Login</h4>
+
+      </div>
+      <div class="card-body">
+        <div class="basic-form col-md-5">
+          <%= form_for :user, url: '/login/create' do |f| %>
+            <div class="form-group">
+              <p>
+                <%= f.label :email %><br>
+                <%= f.text_field :email, :class => 'form-control input-flat', placeholder: "Email" %>
+              </p>
+            </div>
+            <div class="form-group">
+              <%= f.label :Password %><br>
+              <%= f.password_field :password, class: "form-control input-flat", placeholder: "Password", required: true %>
+            </div>
+            <p>
+              <%= f.submit("Sign In",{:class => 'btn btn-info'}) %>
+            </p>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

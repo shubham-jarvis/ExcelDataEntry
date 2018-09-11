@@ -1,0 +1,35 @@
+<div class="row">
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="card-title">
+        <h3>Welcome <%= current_user_role_is? + " " + logged_in_session_owning_user.name.to_s%></h3>
+        <div class="row pull-right">
+          <div class="add-user-btn">
+            <%#= link_to 'Extended contacts', contacts_extended_path, :class => 'btn btn-info' %>
+            <%= link_to 'Logout', login_logout_path, :class => 'btn btn-info' %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="card">
+  <h4>Import customer CSV file</h4>
+  <div class="row pull-right">
+    <div class="add-user-btn">
+      <%= link_to 'Import', customer_index_path, :class => 'btn btn-info' %>
+    </div>
+  </div>
+</div>
+<div class="card">
+  <h4>Assign Agents to Customers</h4>
+  <div class="row pull-right">
+    <div class="add-user-btn">
+      <%= button_to @message, supervisor_assign_path , method: :post , :class => 'btn btn-info' %>
+    </div>
+  </div>
+</div>
+
+

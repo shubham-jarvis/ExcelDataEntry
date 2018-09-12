@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   get 'supervisor/index'
   post 'supervisor/assign'
+  post 'supervisor/import'
 
   get 'home/index'
 
@@ -26,5 +27,6 @@ Rails.application.routes.draw do
 
   get 'agent/call' => 'users#makecall'
   get 'agent/call_log/new' => 'call_logs#new'
+  post 'call_logs/complete'
   post '/call_logs' => 'call_logs#create'
 end

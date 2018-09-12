@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180911071201) do
+ActiveRecord::Schema.define(version: 20180911135926) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,14 +33,14 @@ ActiveRecord::Schema.define(version: 20180911071201) do
     t.string "Designation"
     t.string "Name"
     t.string "Gender"
-    t.float "Mobile_No"
-    t.float "Whatsapp_No"
+    t.string "Mobile_No"
+    t.string "Whatsapp_No"
     t.string "Email"
     t.string "Address"
     t.string "Village"
     t.string "Taluka"
     t.string "District"
-    t.float "Pincode"
+    t.string "Pincode"
     t.string "Vidhan_Sabha"
     t.string "Booth"
     t.integer "Primary_Member_ID"
@@ -51,7 +51,8 @@ ActiveRecord::Schema.define(version: 20180911071201) do
     t.string "Profession"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "currently_assigned_to"
+    t.integer "currently_assigned_to"
+    t.boolean "is_complete"
   end
 
   create_table "roles", force: :cascade do |t|
@@ -65,9 +66,9 @@ ActiveRecord::Schema.define(version: 20180911071201) do
     t.string "name"
     t.string "email"
     t.string "mobile"
+    t.string "password"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "password"
   end
 
 end

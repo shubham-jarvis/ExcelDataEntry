@@ -12,10 +12,8 @@ class CustomerController < ApplicationController
     end
     Customer.where(currently_assigned_to: nil).each do |c|
       User.where(role_id: 3).find_each do |i|
-        if Customer.where(currently_assigned_to: i.name).count <= 5
-          puts i.name
-          puts Customer.where(currently_assigned_to: i.name).count
-          c.currently_assigned_to = i.name
+        if Customer.where(currently_assigned_to: i.id).count <= 5
+          c.currently_assigned_to = i.id
           c.save
         end
       end

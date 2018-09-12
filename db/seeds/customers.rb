@@ -26,5 +26,6 @@ csv.each do |row|
   c.Education = row[19]
   c.Profession = row[20]
   c.currently_assigned_to = row[21]
+  c.is_complete=false
   c.save
 end

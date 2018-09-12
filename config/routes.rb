@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   get 'supervisor/index'
   post 'supervisor/assign'
+  post 'supervisor/import'
 
   get 'home/index'
 

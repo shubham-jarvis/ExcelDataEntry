@@ -10,37 +10,54 @@
           </div>
         </div>
       </div>
-      <h4>Calls to be made: </h4>
-      <div class="card-body">
-        <div class="text-center">
-        </div>
-        <div class="table-responsive">
-          <table class="table" title="Calling Task">
-            <thead>
-            <tr>
-              <th>Name</th>
-              <th>Email</th>
-              <th>Mobile</th>
-              <th>Designation</th>
-              <th>Call</th>
-            </tr>
-            </thead>
-            <tbody>
-
-            <% @customer.each do |c| %>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="card-title">
+        <h4>Calls to be made: </h4>
+        <div class="card-body">
+          <div class="text-center">
+          </div>
+          <div class="table-responsive">
+            <table class="table" class="card" title="Calling Task">
+              <thead>
               <tr>
-                <td><%= c.Name %></td>
-                <td><span><%= c.Email %></span></td>
-                <td><span><%= c.Mobile_No %></span></td>
-                <td><span><%= c.Designation %></span></td>
-                <td><a href="#" onclick="callbutton('<%= c.id %>')" class="btn btn-info">Call</a></td>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Mobile</th>
+                <th>Designation</th>
+                <th>Call</th>
               </tr>
-            <%end%>
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+              <% @customer.each do |c| %>
+                <tr >
+                  <td><%= c.Name %></td>
+                  <td><span><%= c.Email %></span></td>
+                  <td><span><%= c.Mobile_No %></span></td>
+                  <td><span><%= c.Designation %></span></td>
+                  <td><a href="#" onclick="callbutton('<%= c.id %>')" class="btn btn-info">Call</a></td>
+                </tr>
+              <%end%>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
-
   </div>
 </div>
+<div class="row">
+  <div class="col-lg-12">
+    <div class="card">
+<!--        <div class="card-body">-->
+          <h5 align="center">You have placed <%=CallLog.where(user_id: logged_in_session_owning_user.id).count%> Calls till date!</h5>
+<!--        </div>-->
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -19,6 +19,7 @@ class UsersController < ApplicationController
 
   def makecall
     user = Customer.find(params[:id])
+    puts "Calling from" + logged_in_session_owning_user.mobile + " to " + " user.Mobile_No.to_i.to_s"
     @dataresult = HTTParty.post('https://kpi.knowlarity.com/Basic/v1/account/call/makecall/',
                                 verify: false,
                                 body: {k_number: '+912230147776',

@@ -13,8 +13,8 @@
             <thead>
             <tr>
               <th>Call Id</th>
-              <th>Customer Id</th>
-              <th>Status</th>
+              <th>Customer Name</th>
+              <th>Agent Name</th>
               <th>Remarks</th>
               <th>Description</th>
               <th>Reason</th>
@@ -25,11 +25,12 @@
             <% @call_log.each do |call| %>
               <tr>
                 <td><%= call.call_id %></td>
-                <td><span><%= User.find(call.customer_id).name %></span></td>
-                <td><span><%= call.status %></span></td>
-                <td><span><%= call.remarks %></span></td>
-                <td><span><%= call.description %></span></td>
-                <td><span><%= call.reason %></span></td>
+                <td><span><%= Customer.find(call.customer_id).Name %></span></td>
+                <td><span><%= User.find(call.user_id).name %></span></td>
+                <td><span><%= (call.remarks == nil || call.remarks == '') ? 'N/A' : call.remarks %></span></td>
+                <td><span><%= (call.description == nil || call.description == '') ? 'N/A' : call.description %></span>
+                </td>
+                <td><span><%= (call.reason == nil || call.reason == '') ? 'N/A' : call.reason %></span></td>
               </tr>
             <% end %>
             </tbody>

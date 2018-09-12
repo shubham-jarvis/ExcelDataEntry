@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ac29ef0d-019e-482d-aaab-5b1dd9e2c320" name="Default Changelist" comment="final changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/agent_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/agent_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/supervisor_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/supervisor_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/supervisor/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/supervisor/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20180911111224_corrected_datatypes_in_costomer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20180911111224_corrected_datatypes_in_costomer.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/call_logs/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/call_logs/index.html.erb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,15 +19,16 @@
     <session id="1044077285">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.0" value="1" />
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.51" value="1" />
           <entry key="project.open.time.55" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -39,7 +37,7 @@
           <entry key="coffee" value="2" />
           <entry key="css" value="1" />
           <entry key="csv" value="2" />
-          <entry key="erb" value="12" />
+          <entry key="erb" value="13" />
           <entry key="js" value="1" />
           <entry key="meta" value="1" />
           <entry key="pem" value="2" />
@@ -57,7 +55,7 @@
           <entry key="CoffeeScript" value="2" />
           <entry key="JavaScript" value="1" />
           <entry key="PLAIN_TEXT" value="7" />
-          <entry key="RHTML" value="12" />
+          <entry key="RHTML" value="13" />
           <entry key="Ruby" value="55" />
           <entry key="SCSS" value="3" />
           <entry key="TypeScript" value="1" />
@@ -68,10 +66,10 @@
         <counts>
           <entry key="Gemfile" value="4" />
           <entry key="coffee" value="769" />
-          <entry key="erb" value="460" />
+          <entry key="erb" value="618" />
           <entry key="js" value="1" />
           <entry key="meta" value="1" />
-          <entry key="rb" value="1839" />
+          <entry key="rb" value="1840" />
           <entry key="ru" value="5" />
           <entry key="scss" value="27" />
           <entry key="txt" value="151" />
@@ -83,8 +81,8 @@
           <entry key="CoffeeScript" value="769" />
           <entry key="JavaScript" value="1" />
           <entry key="PLAIN_TEXT" value="152" />
-          <entry key="RHTML" value="460" />
-          <entry key="Ruby" value="1848" />
+          <entry key="RHTML" value="618" />
+          <entry key="Ruby" value="1849" />
           <entry key="SCSS" value="27" />
           <entry key="YAML" value="19" />
         </counts>
@@ -99,28 +97,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20180911111730_corrected_column_names_in_customers.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20180912055749_undo_columns_name_in_customers.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/supervisor_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="56" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
+            <state relative-caret-position="629">
+              <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/call_logs/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="32" column="93" selection-start-line="32" selection-start-column="93" selection-end-line="32" selection-end-column="93" />
             </state>
           </provider>
         </entry>
@@ -128,13 +117,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/agent/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="39" column="18" lean-forward="true" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+            <state relative-caret-position="663">
+              <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/agent_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
@@ -179,7 +168,7 @@
         <entry file="file://$PROJECT_DIR$/app/views/supervisor/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+              <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -226,7 +215,6 @@
         <option value="$PROJECT_DIR$/config/environment.rb" />
         <option value="$PROJECT_DIR$/app/views/call_logs/new.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/users.coffee" />
-        <option value="$PROJECT_DIR$/app/views/call_logs/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/agent.coffee" />
@@ -238,9 +226,10 @@
         <option value="$PROJECT_DIR$/app/controllers/customer_controller.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20180912055749_undo_columns_name_in_customers.rb" />
         <option value="$PROJECT_DIR$/app/views/supervisor/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/supervisor_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/agent/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/agent_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/supervisor_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/call_logs/index.html.erb" />
       </list>
     </option>
   </component>
@@ -274,6 +263,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -366,7 +356,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="RailsProjectView" />
     </panes>
   </component>
@@ -375,6 +364,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -499,6 +489,8 @@
       <workItem from="1536640459815" duration="6530000" />
       <workItem from="1536649630225" duration="6006000" />
       <workItem from="1536732329719" duration="1367000" />
+      <workItem from="1536734414533" duration="1221000" />
+      <workItem from="1536745857804" duration="324000" />
     </task>
     <task id="LOCAL-00001" summary="user crud and call log table">
       <created>1536311755031</created>
@@ -553,7 +545,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53762000" />
+    <option name="totallyTimeSpent" value="55307000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -568,7 +560,7 @@
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2744216" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28432643" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -581,7 +573,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32928476" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32928476" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.34078214" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -760,13 +752,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/call_logs/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="34" column="20" lean-forward="true" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20180911071201_add_password_to_users.rb" />
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
@@ -877,10 +862,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20180911111730_corrected_column_names_in_customers.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20180911111730_corrected_column_names_in_customers.rb" />
+    <entry file="file://$PROJECT_DIR$/db/migrate/20180912055749_undo_columns_name_in_customers.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="323">
+          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/supervisor_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/agent/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/agent_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="86" selection-start-line="2" selection-start-column="86" selection-end-line="2" selection-end-column="86" />
         </state>
       </provider>
     </entry>
@@ -908,38 +915,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20180912055749_undo_columns_name_in_customers.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/supervisor/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/supervisor_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/call_logs/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="56" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/agent/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="39" column="18" lean-forward="true" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/agent_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="86" selection-start-line="2" selection-start-column="86" selection-end-line="2" selection-end-column="86" />
+        <state relative-caret-position="161">
+          <caret line="32" column="93" selection-start-line="32" selection-start-column="93" selection-end-line="32" selection-end-column="93" />
         </state>
       </provider>
     </entry>

@@ -5,7 +5,7 @@
         <h3>Welcome <%= current_user_role_is? + " " + logged_in_session_owning_user.name.to_s %></h3>
         <div class="row pull-right">
           <div class="add-user-btn">
-            <%#= link_to 'Extended contacts', contacts_extended_path, :class => 'btn btn-info' %>
+            <%= link_to 'Call logs', call_log_path, :class => 'btn btn-info' %>
             <%= link_to 'Logout', login_logout_path, :class => 'btn btn-info' %>
           </div>
         </div>

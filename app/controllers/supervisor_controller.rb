@@ -19,11 +19,9 @@ class SupervisorController < ApplicationController
       puts Customer.create(Hash[keys.zip(row)])
     end
     Customer.where(currently_assigned_to: nil, is_complete: false).each do |c|
-      User.where(role_id: 3).find_each do |i|
-        if Customer.where(currently_assigned_to: i.name).count <= 5
-          puts i.name
-          puts Customer.where(currently_assigned_to: i.name).count
-          c.currently_assigned_to = i.name
+      User.where(role_id: Role.where(title: 'Agent').id).find_each do |i|
+        if Customer.where(currently_assigned_to: i.id).count <= 5
+          c.currently_assigned_to = i.id
           c.save
         end
       end
@@ -32,11 +30,9 @@ class SupervisorController < ApplicationController
 
   def assign
     Customer.where(currently_assigned_to: nil, is_complete: false).each do |c|
-      User.where(role_id: 3).find_each do |i|
-        if Customer.where(currently_assigned_to: i.name, is_complete: false).count <= 5
-          puts i.name
-          puts Customer.where(currently_assigned_to: i.name).count
-          c.currently_assigned_to = i.name
+      User.where(role_id: Role.find_by_title("Agent").id).find_each do |i|
+        if Customer.where(currently_assigned_to: i.id, is_complete: false).count <= 5
+           c.currently_assigned_to = i.id
           c.save
         end
       end

@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0f16c8e5-d1cb-456b-bc9e-bedaa4f35d08" name="Default Changelist" comment="final changes">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/bc5ff434-50ea-4fb9-9ecd-a9190e054782.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/bc5ff434-50ea-4fb9-9ecd-a9190e054782/storage_v2/_src_/database/excelDataEntry_development.7eeAdQ/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/bc5ff434-50ea-4fb9-9ecd-a9190e054782/storage_v2/_src_/database/excelDataEntry_development.7eeAdQ/schema/information_schema.FNRwLQ.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/bc5ff434-50ea-4fb9-9ecd-a9190e054782/storage_v2/_src_/database/excelDataEntry_development.7eeAdQ/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/bc5ff434-50ea-4fb9-9ecd-a9190e054782/storage_v2/_src_/database/excelDataEntry_development.7eeAdQ/schema/pg_catalog.0S1ZNQ.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/bc5ff434-50ea-4fb9-9ecd-a9190e054782/storage_v2/_src_/database/excelDataEntry_development.7eeAdQ/schema/pg_temp_1.zkWuFg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/bc5ff434-50ea-4fb9-9ecd-a9190e054782/storage_v2/_src_/database/excelDataEntry_development.7eeAdQ/schema/pg_toast.33HYYw.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/bc5ff434-50ea-4fb9-9ecd-a9190e054782/storage_v2/_src_/database/excelDataEntry_development.7eeAdQ/schema/pg_toast_temp_1.5ixBaA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20180911130952_remove_column.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20180911131350_add_is_complete.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bc5ff434-50ea-4fb9-9ecd-a9190e054782/storage_v2/_src_/database/excelDataEntry_development.7eeAdQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/bc5ff434-50ea-4fb9-9ecd-a9190e054782/storage_v2/_src_/database/excelDataEntry_development.7eeAdQ/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/agent_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/agent_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/call_logs_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/call_logs_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/supervisor_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/supervisor_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/supervisor/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/supervisor/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+    <list default="true" id="0f16c8e5-d1cb-456b-bc9e-bedaa4f35d08" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,7 +37,7 @@
           <entry key="meta" value="1" />
           <entry key="pem" value="2" />
           <entry key="pid" value="2" />
-          <entry key="rb" value="40" />
+          <entry key="rb" value="41" />
           <entry key="ru" value="2" />
           <entry key="scss" value="3" />
           <entry key="yml" value="1" />
@@ -66,7 +50,7 @@
           <entry key="JavaScript" value="1" />
           <entry key="PLAIN_TEXT" value="7" />
           <entry key="RHTML" value="11" />
-          <entry key="Ruby" value="46" />
+          <entry key="Ruby" value="47" />
           <entry key="SCSS" value="3" />
           <entry key="YAML" value="1" />
         </counts>
@@ -108,8 +92,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/call_logs_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-140">
+            <state>
               <caret lean-forward="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20180911130952_remove_column.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -155,7 +148,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/supervisor/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
@@ -526,11 +519,18 @@
       <option name="project" value="LOCAL" />
       <updated>1536658524074</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="final changes">
+      <created>1536730269881</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1536730269881</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50485000" />
+    <option name="totallyTimeSpent" value="51323000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -868,13 +868,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/call_logs_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-140">
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1292">
@@ -902,6 +895,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/call_logs_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20180911130952_remove_column.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>

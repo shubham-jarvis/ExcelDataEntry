@@ -1,0 +1,8 @@
+<h1>Costomer#import</h1>
+<p>Find me in app/views/costomer/import.html.erb</p>
+<%i=1 %>
+<% Customer.all.each do |row| %>
+  <%= "#{i}> Name:" +row.Name+ " Education:" + row.Education %><br/>
+  <% i=i+1 %>
+<% end %>
+<h1>File has been uploaded. Check</h1>
